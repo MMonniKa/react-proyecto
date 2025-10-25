@@ -7,7 +7,7 @@ export const Nav = () => {
   
   return (
     <nav className="navbar">
-      <h2 className="navbar-logo">KEKA Tortas 🎂</h2>
+      <h2 className="navbar-logo">TIENDA TORTAS</h2>
       <ul className="navbar-links">
         <li>
           <Link to="/">Home</Link>
