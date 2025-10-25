@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1",
+      "name": "Torta de Chocolate",
+      "price": 35000,
+      "category": "sin frutas",
+      "imageUrl": "/images/chocolate.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Torta de Frutilla",
+      "category": "con frutas",
+      "price": 40000,
+      "imageUrl": "/images/frutillas.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Torta Rogel",
+      "category": "sin frutas",
+      "price": 45000,
+      "imageUrl": "/images/rogel.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Rose Cake",
+      "category": "sin frutas",
+      "price": 32000,
+      "imageUrl": "/images/rosecake.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Cheesecake",
+      "category": "con frutas",
+      "price": 37000,
+      "imageUrl": "/images/cheesecake.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Lemon Pie",
+      "category": "con frutas",
+      "price": 30000,
+      "imageUrl": "/images/lemonpie.jpg"
+    }
+  ]

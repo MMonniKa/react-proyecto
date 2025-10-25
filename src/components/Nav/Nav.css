@@ -1,0 +1,54 @@
+/* Contenedor principal de la barra de navegación */
+.navbar {
+  background-color: #272727;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffcc66;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Lista de links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* espacio entre links */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* Links */
+.navbar-links a {
+  color: #ffcc66;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Contador del carrito */
+.cart-link {
+  position: relative; /* necesario para posicionar el contador */
+}
+
+.in-cart {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+}
+ 
