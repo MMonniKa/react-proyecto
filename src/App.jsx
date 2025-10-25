@@ -3,7 +3,7 @@ import "./App.css";
 import { Nav } from "./components/Nav/Nav";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
-import { CartProvider } from "./context/CartContext/Cartprovider";
+import { CartProvider } from "./context/CartContext/CartProvider";
 
 
 function App() {
