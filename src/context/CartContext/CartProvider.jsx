@@ -14,8 +14,15 @@ export const CartProvider = ({ children }) => {
             alert("El producto ya existe en el carrito");
             return;
         }
-        setCart([...cart, item]);
+        const newItem = {...item, quantity: item.quantity || 1};
+        setCart([...cart, newItem]);
         alert(`${item.name} agregado al carrito`);
+    };
+
+    const deleteItem = (id) => {
+        const filtered = cart.filter (p => p.id !== id);
+        setCart(filtered);
+        alert("Producto eliminado del carrito");
     };
 
     const clearCart = () => {
@@ -28,11 +35,27 @@ export const CartProvider = ({ children }) => {
         }
     };
 
+    const total = () => {
+        const total = cart.reduce((acc, p) => acc + p.price * p.quantity, 0);
+        return Math.round(total * 100) / 100;
+    };
+
+    const checkout = () => {
+        const ok = confirm("¿Desea finalizar la compra?");
+        if (ok) {
+          alert("Compra realizada con exito");
+            clearCart();
+        }
+    };
+
     const values = {
         cart,
         addItem,
         clearCart,
         getTotalItems,
+        deleteItem,
+        total,
+        checkout
     };
     
     return (
